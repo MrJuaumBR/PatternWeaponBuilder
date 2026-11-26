@@ -18,6 +18,14 @@ textures:
     h: 32
     type: "pattern"
     layer_priority: 100
+  - id: "longsword_handle"
+    name: "Longsword Handle"
+    x: 64
+    y: 96
+    w: 32
+    h: 32
+    type: "pattern"
+    layer_priority: 100
 
   # ---- Joints / hilts (middle layer) ------------------------------------
   - id: "pickaxe_joint"
@@ -44,10 +52,26 @@ textures:
     h: 32
     type: "pattern"
     layer_priority: 50
+  - id: "longsword_hilt"
+    name: "Longsword Hilt"
+    x: 32
+    y: 96
+    w: 32
+    h: 32
+    type: "pattern"
+    layer_priority: 50
 
   # ---- Heads / blades (drawn last -> top layer) -------------------------
-  - id: "pickaxe_head"
-    name: "Pickaxe Head"
+  - id: "pickaxe_head_left"
+    name: "Pickaxe Head Left"
+    x: 96
+    y: 0
+    w: 32
+    h: 32
+    type: "pattern"
+    layer_priority: 10
+  - id: "pickaxe_head_right"
+    name: "Pickaxe Head Right"
     x: 32
     y: 32
     w: 32
@@ -74,6 +98,22 @@ textures:
     name: "Sword Blade"
     x: 96
     y: 64
+    w: 32
+    h: 32
+    type: "pattern"
+    layer_priority: 10
+  - id: "longsword_blade"
+    name: "Longsword Blade"
+    x: 0
+    y: 96
+    w: 32
+    h: 32
+    type: "pattern"
+    layer_priority: 10
+  - id: "shovel_blade"
+    name: "Shovel Blade"
+    x: 96
+    y: 96
     w: 32
     h: 32
     type: "pattern"

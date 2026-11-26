@@ -1,57 +1,149 @@
 patterns:
   - id: pickaxe
+    item_type: tool
+    base_stats:
+      durability: 100
+      attack: 100
     parts:
       - id: tool_handle
+        role: handle
         material_amount: 1
         weight: 0.15
+        allowed_material_types: [natural, misc]
+        allowed_material_categories: [natural]
       - id: pickaxe_joint
+        role: joint
         material_amount: 1
         weight: 0.20
-      - id: pickaxe_head
-        material_amount: 2
-        weight: 0.65
+        allowed_material_types: [metal, alloy]
+        allowed_material_categories: [metals, alloys]
+      - id: pickaxe_head_left
+        role: head
+        material_amount: 1
+        weight: 0.325
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
+      - id: pickaxe_head_right
+        role: head
+        material_amount: 1
+        weight: 0.325
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
 
   - id: axe
+    item_type: weapon
+    base_stats:
+      durability: 100
+      attack: 100
     parts:
       - id: tool_handle
+        role: handle
         material_amount: 1
         weight: 0.15
+        allowed_material_types: [natural, misc]
+        allowed_material_categories: [natural]
       - id: axe_joint
+        role: joint
         material_amount: 1
         weight: 0.15
+        allowed_material_types: [metal, alloy]
+        allowed_material_categories: [metals, alloys]
       - id: axe_back_head
+        role: counterweight
         material_amount: 1
         weight: 0.25
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
       - id: axe_head
+        role: head
         material_amount: 2
         weight: 0.45
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
+
+  - id: shovel
+    item_type: tool
+    base_stats:
+      durability: 100
+      attack: 100
+    parts:
+      - id: tool_handle
+        role: handle
+        material_amount: 1
+        weight: 0.15
+        allowed_material_types: [natural, misc]
+        allowed_material_categories: [natural]
+      - id: pickaxe_joint          # reused — same joint, "same build as pickaxe"
+        role: joint
+        material_amount: 1
+        weight: 0.20
+        allowed_material_types: [metal, alloy]
+        allowed_material_categories: [metals, alloys]
+      - id: shovel_blade
+        role: head
+        material_amount: 2
+        weight: 0.65
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
 
   - id: shortsword
+    item_type: weapon
+    base_stats:
+      durability: 100
+      attack: 100
     parts:
       - id: sword_handle
+        role: handle
         material_amount: 1
         weight: 0.20
+        allowed_material_types: [natural, misc]
+        allowed_material_categories: [natural]
       - id: sword_hilt
+        role: hilt
         material_amount: 1
         weight: 0.20
+        allowed_material_types: [metal, alloy]
+        allowed_material_categories: [metals, alloys]
       - id: sword_blade
+        role: blade
         material_amount: 1
         weight: 0.60
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
 
   - id: longsword
+    item_type: weapon
+    base_stats:
+      durability: 100
+      attack: 100
     parts:
-      - id: sword_handle
+      - id: longsword_handle
+        role: handle
         material_amount: 1
         weight: 0.15
-      - id: sword_hilt
+        allowed_material_types: [natural, misc]
+        allowed_material_categories: [natural]
+      - id: longsword_hilt
+        role: hilt
         material_amount: 1
         weight: 0.15
-      - id: sword_blade
-        material_amount: 2
+        allowed_material_types: [metal, alloy]
+        allowed_material_categories: [metals, alloys]
+      - id: longsword_blade
+        role: blade
+        material_amount: 1
         weight: 0.70
+        allowed_material_types: [metal, alloy, gem, misc]
+        allowed_material_categories: [metals, alloys, gems, natural]
 
   - id: ingot
+    item_type: ingot
+    base_stats:
+      durability: 100
     parts:
       - id: ingot_bar
+        role: ingot
         material_amount: 1
         weight: 1.00
+        allowed_material_types: [metal, alloy]
+        allowed_material_categories: [metals, alloys]
