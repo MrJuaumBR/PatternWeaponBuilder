@@ -1,0 +1,7 @@
+crafts:
+  - name: "pickaxe_craft"
+    pattern: pickaxe
+    station: anvil
+  - name: "axe_craft"
+    pattern: axe
+    station: anvil

@@ -1,0 +1,73 @@
+filename: "textures/patterns.png"
+
+textures:
+  - id: "tool_handle"
+    name: "Tool Handle"
+    x: 32
+    y: 0
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "ingot_bar"
+    name: "Ingot Bar"
+    x: 64
+    y: 0
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "pickaxe_joint"
+    name: "Pickaxe Joint"
+    x: 0
+    y: 32
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "pickaxe_head"
+    name: "Pickaxe Head"
+    x: 32
+    y: 32
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "axe_joint"
+    name: "Axe Joint"
+    x: 64
+    y: 32
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "axe_back_head"
+    name: "Axe Back Head"
+    x: 96
+    y: 32
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "axe_head"
+    name: "Axe Head"
+    x: 0
+    y: 64
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "sword_handle"
+    name: "Sword Handle"
+    x: 32
+    y: 64
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "sword_hilt"
+    name: "Sword Hilt"
+    x: 64
+    y: 64
+    w: 32
+    h: 32
+    type: "pattern"
+  - id: "sword_blade"
+    name: "Sword Blade"
+    x: 96
+    y: 32
+    w: 32
+    h: 32
+    type: "pattern"
