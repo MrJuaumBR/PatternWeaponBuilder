@@ -1,0 +1,57 @@
+patterns:
+  - id: pickaxe
+    parts:
+      - id: tool_handle
+        material_amount: 1
+        weight: 0.15
+      - id: pickaxe_joint
+        material_amount: 1
+        weight: 0.20
+      - id: pickaxe_head
+        material_amount: 2
+        weight: 0.65
+
+  - id: axe
+    parts:
+      - id: tool_handle
+        material_amount: 1
+        weight: 0.15
+      - id: axe_joint
+        material_amount: 1
+        weight: 0.15
+      - id: axe_back_head
+        material_amount: 1
+        weight: 0.25
+      - id: axe_head
+        material_amount: 2
+        weight: 0.45
+
+  - id: shortsword
+    parts:
+      - id: sword_handle
+        material_amount: 1
+        weight: 0.20
+      - id: sword_hilt
+        material_amount: 1
+        weight: 0.20
+      - id: sword_blade
+        material_amount: 1
+        weight: 0.60
+
+  - id: longsword
+    parts:
+      - id: sword_handle
+        material_amount: 1
+        weight: 0.15
+      - id: sword_hilt
+        material_amount: 1
+        weight: 0.15
+      - id: sword_blade
+        material_amount: 2
+        weight: 0.70
+
+  - id: ingot
+    parts:
+      - id: ingot_bar
+        material_amount: 1
+        weight: 1.00

@@ -2,12 +2,20 @@ materials:
   - id: "wood"
     name: "Wood"
     description: "A common natural organic material; lightweight, easy to work, and moderately durable."
-    durability: 0.46 # -1.0 ~ 1.0
-    damage: 0.3 # -1.0 ~ 1.0
-    defense: 0.22 # -1.0 ~ 1.0
+    durability: 0.46
+    damage: 0.3
+    defense: 0.22
     color: "#87633A"
     type: natural
     category: natural
+    roughness: 0.70
+    weight: 0.15
+    hardness: 0.20
+    elasticity: 0.50
+    thermal_conductivity: 0.10
+    melting_point: 300
+    magic_affinity: 0.10
+    traits: [flammable, flexible]
 
   - id: "bone"
     name: "Bone"
@@ -18,6 +26,14 @@ materials:
     color: "#E3DAC9"
     type: misc
     category: natural
+    roughness: 0.60
+    weight: 0.20
+    hardness: 0.40
+    elasticity: 0.30
+    thermal_conductivity: 0.15
+    melting_point: 800
+    magic_affinity: 0.15
+    traits: [jagged, lightweight]
 
   - id: "iron_ore"
     name: "Iron Ore"
@@ -28,6 +44,14 @@ materials:
     color: "#a19d94"
     type: metal
     category: ores
+    roughness: 0.90
+    weight: 0.70
+    hardness: 0.50
+    elasticity: 0.20
+    thermal_conductivity: 0.40
+    melting_point: 1538
+    magic_affinity: 0.10
+    traits: [crude]
 
   - id: "iron_bar"
     name: "Iron Bar"
@@ -38,6 +62,14 @@ materials:
     color: "#a19d94"
     type: metal
     category: metals
+    roughness: 0.40
+    weight: 0.70
+    hardness: 0.60
+    elasticity: 0.40
+    thermal_conductivity: 0.50
+    melting_point: 1538
+    magic_affinity: 0.10
+    traits: [reinforced, tough]
 
   - id: "copper_ore"
     name: "Copper Ore"
@@ -48,6 +80,14 @@ materials:
     color: "#B87333"
     type: metal
     category: ores
+    roughness: 0.85
+    weight: 0.60
+    hardness: 0.35
+    elasticity: 0.25
+    thermal_conductivity: 0.70
+    melting_point: 1085
+    magic_affinity: 0.05
+    traits: [conductive]
 
   - id: "copper_bar"
     name: "Copper Bar"
@@ -58,6 +98,14 @@ materials:
     color: "#B87333"
     type: metal
     category: metals
+    roughness: 0.40
+    weight: 0.60
+    hardness: 0.40
+    elasticity: 0.40
+    thermal_conductivity: 0.85
+    melting_point: 1085
+    magic_affinity: 0.05
+    traits: [conductive, flexible]
 
   - id: "gold_ore"
     name: "Gold Ore"
@@ -68,6 +116,14 @@ materials:
     color: "#FFD700"
     type: metal
     category: ores
+    roughness: 0.80
+    weight: 0.90
+    hardness: 0.30
+    elasticity: 0.15
+    thermal_conductivity: 0.60
+    melting_point: 1064
+    magic_affinity: 0.25
+    traits: [dense]
 
   - id: "gold_bar"
     name: "Gold Bar"
@@ -78,6 +134,14 @@ materials:
     color: "#FFD700"
     type: metal
     category: metals
+    roughness: 0.35
+    weight: 0.90
+    hardness: 0.35
+    elasticity: 0.30
+    thermal_conductivity: 0.75
+    melting_point: 1064
+    magic_affinity: 0.30
+    traits: [sparkly, heavy]
 
   - id: "coal"
     name: "Coal"
@@ -88,6 +152,14 @@ materials:
     color: "#2B2B2B"
     type: natural
     category: natural
+    roughness: 0.90
+    weight: 0.30
+    hardness: 0.20
+    elasticity: 0.10
+    thermal_conductivity: 0.05
+    melting_point: -1
+    magic_affinity: 0.05
+    traits: [flammable]
 
   - id: "carbon"
     name: "Carbon"
@@ -98,6 +170,14 @@ materials:
     color: "#222222"
     type: chemical
     category: chemicals
+    roughness: 0.50
+    weight: 0.20
+    hardness: 0.40
+    elasticity: 0.10
+    thermal_conductivity: 0.20
+    melting_point: 3550
+    magic_affinity: 0.10
+    traits: [brittle]
 
   - id: "magnetite"
     name: "Magnetite"
@@ -108,6 +188,14 @@ materials:
     color: "#2F2F2F"
     type: metal
     category: ores
+    roughness: 0.85
+    weight: 0.80
+    hardness: 0.55
+    elasticity: 0.15
+    thermal_conductivity: 0.35
+    melting_point: 1597
+    magic_affinity: 0.05
+    traits: [magnetic, dense]
 
   - id: "fiber"
     name: "Fiber"
@@ -118,6 +206,14 @@ materials:
     color: "#D2B48C"
     type: natural
     category: natural
+    roughness: 0.60
+    weight: 0.05
+    hardness: 0.10
+    elasticity: 0.80
+    thermal_conductivity: 0.05
+    melting_point: 250
+    magic_affinity: 0.05
+    traits: [flexible, lightweight]
 
   - id: "brass"
     name: "Brass"
@@ -128,6 +224,14 @@ materials:
     color: "#B5A642"
     type: alloy
     category: alloys
+    roughness: 0.35
+    weight: 0.60
+    hardness: 0.45
+    elasticity: 0.40
+    thermal_conductivity: 0.80
+    melting_point: 900
+    magic_affinity: 0.05
+    traits: [conductive, sparkly]
 
   - id: "steel"
     name: "Steel"
@@ -138,6 +242,14 @@ materials:
     color: "#71797E"
     type: alloy
     category: alloys
+    roughness: 0.30
+    weight: 0.75
+    hardness: 0.75
+    elasticity: 0.55
+    thermal_conductivity: 0.50
+    melting_point: 1425
+    magic_affinity: 0.10
+    traits: [reinforced, sharp, tough]
 
   - id: "aluminium"
     name: "Aluminium"
@@ -148,6 +260,14 @@ materials:
     color: "#C0C0C0"
     type: metal
     category: metals
+    roughness: 0.30
+    weight: 0.25
+    hardness: 0.40
+    elasticity: 0.50
+    thermal_conductivity: 0.90
+    melting_point: 660
+    magic_affinity: 0.05
+    traits: [lightweight, conductive]
 
   - id: "titanium"
     name: "Titanium"
@@ -158,6 +278,14 @@ materials:
     color: "#878681"
     type: metal
     category: metals
+    roughness: 0.35
+    weight: 0.45
+    hardness: 0.80
+    elasticity: 0.60
+    thermal_conductivity: 0.30
+    melting_point: 1668
+    magic_affinity: 0.15
+    traits: [lightweight, tough, fireproof]
 
   - id: "diamond"
     name: "Diamond"
@@ -168,6 +296,14 @@ materials:
     color: "#B9F2FF"
     type: gem
     category: gems
+    roughness: 0.10
+    weight: 0.35
+    hardness: 0.99
+    elasticity: 0.30
+    thermal_conductivity: 0.95
+    melting_point: 3550
+    magic_affinity: 0.40
+    traits: [sharp, brittle_gem, reinforced]
 
   - id: "emerald"
     name: "Emerald"
@@ -178,6 +314,14 @@ materials:
     color: "#50C878"
     type: gem
     category: gems
+    roughness: 0.15
+    weight: 0.30
+    hardness: 0.80
+    elasticity: 0.25
+    thermal_conductivity: 0.30
+    melting_point: 1300
+    magic_affinity: 0.35
+    traits: [sparkly, hardened]
 
   - id: "topaz"
     name: "Topaz"
@@ -188,6 +332,14 @@ materials:
     color: "#FFC87C"
     type: gem
     category: gems
+    roughness: 0.20
+    weight: 0.30
+    hardness: 0.75
+    elasticity: 0.25
+    thermal_conductivity: 0.30
+    melting_point: 1300
+    magic_affinity: 0.30
+    traits: [sparkly]
 
   - id: "amethyst"
     name: "Amethyst"
@@ -198,6 +350,14 @@ materials:
     color: "#9966CC"
     type: gem
     category: gems
+    roughness: 0.20
+    weight: 0.28
+    hardness: 0.60
+    elasticity: 0.20
+    thermal_conductivity: 0.25
+    melting_point: 870
+    magic_affinity: 0.40
+    traits: [sparkly]
 
   - id: "sapphire"
     name: "Sapphire"
@@ -208,6 +368,14 @@ materials:
     color: "#0F52BA"
     type: gem
     category: gems
+    roughness: 0.15
+    weight: 0.35
+    hardness: 0.90
+    elasticity: 0.25
+    thermal_conductivity: 0.35
+    melting_point: 2040
+    magic_affinity: 0.50
+    traits: [sharp, hardened, reinforced]
 
   - id: "ruby"
     name: "Ruby"
@@ -218,6 +386,14 @@ materials:
     color: "#E0115F"
     type: gem
     category: gems
+    roughness: 0.15
+    weight: 0.35
+    hardness: 0.88
+    elasticity: 0.25
+    thermal_conductivity: 0.35
+    melting_point: 2040
+    magic_affinity: 0.50
+    traits: [sharp, hardened]
 
   - id: "copper_wire"
     name: "Copper Wire"
@@ -228,6 +404,14 @@ materials:
     color: "#B87333"
     type: metal
     category: wires
+    roughness: 0.30
+    weight: 0.40
+    hardness: 0.30
+    elasticity: 0.70
+    thermal_conductivity: 0.85
+    melting_point: 1085
+    magic_affinity: 0.05
+    traits: [conductive, flexible]
 
   - id: "gold_wire"
     name: "Gold Wire"
@@ -238,3 +422,11 @@ materials:
     color: "#FFD700"
     type: metal
     category: wires
+    roughness: 0.30
+    weight: 0.80
+    hardness: 0.25
+    elasticity: 0.60
+    thermal_conductivity: 0.70
+    melting_point: 1064
+    magic_affinity: 0.30
+    traits: [conductive, sparkly]

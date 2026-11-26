@@ -1,0 +1,208 @@
+traits:
+  - id: jagged
+    name: Jagged
+    description: "Rough edges deal extra damage but wear faster."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: damage
+        value: 0.10
+      - kind: stat_mult
+        stat: durability_cost
+        value: 1.25
+
+  - id: reinforced
+    name: Reinforced
+    description: "20% chance to prevent durability loss on use."
+    type: passive
+    effects:
+      - kind: chance
+        event: on_use
+        chance: 0.20
+        effects:
+          - kind: stat_flat
+            stat: durability_cost
+            value: -1.0
+
+  - id: sharp
+    name: Sharp
+    description: "A keen edge adds flat damage."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: damage
+        value: 0.12
+
+  - id: lightweight
+    name: Lightweight
+    description: "Swings faster but has reduced knockback."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: attack_speed
+        value: 0.15
+      - kind: stat_mult
+        stat: knockback
+        value: 0.70
+
+  - id: heavy
+    name: Heavy
+    description: "Slow but powerful; increased knockback."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: attack_speed
+        value: -0.15
+      - kind: stat_mult
+        stat: knockback
+        value: 1.40
+
+  - id: brittle
+    name: Brittle
+    description: "Wears out faster than normal."
+    type: passive
+    effects:
+      - kind: stat_mult
+        stat: durability_cost
+        value: 1.40
+
+  - id: tough
+    name: Tough
+    description: "Resists wear, reducing durability cost."
+    type: passive
+    effects:
+      - kind: stat_mult
+        stat: durability_cost
+        value: 0.80
+
+  - id: sparkly
+    name: Sparkly
+    description: "Shiny and valuable; increases item value."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: value
+        value: 0.25
+
+  - id: crude
+    name: Crude
+    description: "Unrefined; slightly weaker across the board."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: damage
+        value: -0.05
+      - kind: stat_flat
+        stat: defense
+        value: -0.05
+      - kind: stat_flat
+        stat: durability
+        value: -0.05
+
+  - id: flammable
+    name: Flammable
+    description: "Catches fire easily; extra durability loss when struck by fire."
+    type: on_event
+    events:
+      - event: on_hit_by_fire
+        effects:
+          - kind: stat_flat
+            stat: durability_cost
+            value: 1.0
+
+  - id: fireproof
+    name: Fireproof
+    description: "Immune to fire damage."
+    type: passive
+    effects:
+      - kind: immunity
+        damage_type: fire
+
+  - id: conductive
+    name: Conductive
+    description: "Channels energy; small bonus damage on magical targets."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: damage
+        value: 0.05
+
+  - id: magnetic
+    name: Magnetic
+    description: "Pulls nearby dropped items toward the wielder."
+    type: passive
+    effects:
+      - kind: aura
+        range: 3
+        effect: pull_items
+
+  - id: brittle_gem
+    name: Brittle Gem
+    description: "Crystal structure: high damage but cracks easily under stress."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: damage
+        value: 0.15
+      - kind: stat_mult
+        stat: durability_cost
+        value: 1.30
+
+  - id: soulbound
+    name: Soulbound
+    description: "The item stays with the owner upon death."
+    type: passive
+    effects:
+      - kind: flag
+        flag: keep_on_death
+
+  - id: writeable
+    name: Writeable
+    description: "One extra modifier slot."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: modifier_slots
+        value: 1
+
+  - id: dense
+    name: Dense
+    description: "High mass; increases knockback and stagger."
+    type: passive
+    effects:
+      - kind: stat_mult
+        stat: knockback
+        value: 1.25
+
+  - id: flexible
+    name: Flexible
+    description: "Bends under stress, reducing durability cost."
+    type: passive
+    effects:
+      - kind: stat_mult
+        stat: durability_cost
+        value: 0.85
+
+  - id: hardened
+    name: Hardened
+    description: "Harder than usual; adds flat defense."
+    type: passive
+    effects:
+      - kind: stat_flat
+        stat: defense
+        value: 0.10
+
+  - id: stonebound
+    name: Stonebound
+    description: "Grows stronger as it wears down."
+    type: passive
+    effects:
+      - kind: conditional
+        condition:
+          stat: durability_ratio
+          operator: "<"
+          value: 0.5
+        effects:
+          - kind: stat_flat
+            stat: damage
+            value: 0.15

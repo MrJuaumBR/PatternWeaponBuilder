@@ -5,3 +5,12 @@ crafts:
   - name: "axe_craft"
     pattern: axe
     station: anvil
+  - name: "shortsword_craft"
+    pattern: shortsword
+    station: anvil
+  - name: "longsword_craft"
+    pattern: longsword
+    station: anvil
+  - name: "ingot_craft"
+    pattern: ingot
+    station: forge
